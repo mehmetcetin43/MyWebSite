@@ -41,7 +41,15 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="DataAccess\EntityFramework\EfEntityRepositoryBase.cs" />
+    <Compile Include="DataAccess\IEntityRepository.cs" />
+    <Compile Include="Entities\IEntity.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="EntityFramework">
+      <Version>6.4.0</Version>
+    </PackageReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
